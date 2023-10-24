@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 504.32 504.32" xml:space="preserve" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g transform="translate(1 1)">
+                <path
+                  style="fill: #ecf4f7"
+                  d="M336.067,498.627H225.133V430.36c-17.067,8.533-34.133,8.533-34.133,8.533s-59.733,0-85.333-59.733 c-17.067-40.107-102.4-8.533-102.4-8.533v-230.4h221.867H344.6v102.4h-34.133l5.973,68.267h-0.853l11.947,170.667 c0,6.827,3.413,11.947,9.387,15.36L336.067,498.627z M225.133,140.227H3.267l68.267-102.4h204.8l68.267,93.867v8.533H225.133z"
+                ></path>
+                <polygon style="fill: #aab1ba" points="71.533,37.827 276.333,37.827 276.333,3.693 71.533,3.693 "></polygon>
+                <polygon style="fill: #ecf4f7" points="498.2,242.627 493.08,310.893 489.667,310.893 316.44,310.893 310.467,242.627 344.6,242.627 "></polygon>
+                <g>
+                  <path style="fill: #80d6fa" d="M493.08,310.893L481.133,481.56c0,9.387-7.68,17.067-17.067,17.067H344.6 c-2.56,0-5.973-0.853-7.68-1.707c-5.12-2.56-9.387-8.533-9.387-15.36l-11.947-170.667h0.853h173.227H493.08z"></path>
+                  <path style="fill: #80d6fa" d="M225.133,430.36v68.267H3.267v-128c0,0,85.333-31.573,102.4,8.533 c25.6,59.733,85.333,59.733,85.333,59.733S208.067,438.893,225.133,430.36"></path>
+                </g>
+              </g>
+              <path
+                style="fill: #51565f"
+                d="M465.067,503.893H345.6c-11.947,0-21.333-9.387-21.333-21.333L312.32,311.893 c0-0.853,0-2.56,0.853-3.413c0.853-0.853,1.707-1.707,3.413-1.707h139.947c2.56,0,4.267,1.707,4.267,4.267 c0,2.56-1.707,4.267-4.267,4.267H321.707l11.093,166.4c0,7.68,5.973,12.8,12.8,12.8h119.467c6.827,0,12.8-5.973,12.8-12.8 l17.067-234.667H316.587l2.56,29.867c0,2.56-1.707,4.267-4.267,4.267c-1.707,0-4.267-1.707-4.267-4.267l-2.56-34.133 c0-0.853,0-2.56,0.853-3.413c0.853-0.853,1.707-1.707,3.413-1.707h187.733c0.853,0,2.56,0.853,3.413,1.707 c0.853,0.853,0.853,1.707,0.853,3.413l-17.067,238.933C486.4,494.507,477.013,503.893,465.067,503.893z M294.4,503.893H4.267 c-2.56,0-4.267-1.707-4.267-4.267v-128l0,0v-230.4c0-0.853,0-0.853,0-1.707c0,0,0-0.853,0.853-0.853L68.267,37.12V4.693 c0-2.56,1.707-4.267,4.267-4.267h204.8c2.56,0,4.267,1.707,4.267,4.267V37.12l67.413,93.013c0.853,0.853,0.853,1.707,0.853,2.56 v76.8c0,2.56-1.707,4.267-4.267,4.267s-4.267-1.707-4.267-4.267V134.4l-66.56-91.307H106.667c-2.56,0-4.267-1.707-4.267-4.267 c0-2.56,1.707-4.267,4.267-4.267h166.4V8.96H76.8v29.867c0,0.853,0,1.707-0.853,2.56l-64,95.573h211.627l33.28-65.707 c0.853-1.707,3.413-2.56,5.973-1.707c1.707,0.853,2.56,3.413,1.707,5.973l-30.72,62.293h78.507c2.56,0,4.267,1.707,4.267,4.267 c0,2.56-1.707,4.267-4.267,4.267h-85.333l0,0H9.386v220.16c20.48-6.827,86.187-24.747,102.4,12.8 c23.893,56.32,81.067,57.173,81.067,57.173c2.56,0,4.267,1.707,4.267,4.267s-1.707,4.267-4.267,4.267 c-0.853,0-63.147-0.853-89.6-62.293c-13.653-32.427-79.36-11.947-93.867-6.827v120.32H222.72V175.36c0-2.56,1.707-4.267,4.267-4.267 s4.267,1.707,4.267,4.267v320h64c2.56,0,4.267,1.707,4.267,4.267C299.52,502.187,296.96,503.893,294.4,503.893z M140.8,299.093 H72.533c-2.56,0-4.267-1.707-4.267-4.267c0-2.56,1.707-4.267,4.267-4.267H140.8c2.56,0,4.267,1.707,4.267,4.267 C145.067,297.387,143.36,299.093,140.8,299.093z M157.867,264.96H72.533c-2.56,0-4.267-1.707-4.267-4.267 c0-2.56,1.707-4.267,4.267-4.267h85.333c2.56,0,4.267,1.707,4.267,4.267C162.133,263.253,160.427,264.96,157.867,264.96z M123.733,230.827h-51.2c-2.56,0-4.267-1.707-4.267-4.267c0-2.56,1.707-4.267,4.267-4.267h51.2c2.56,0,4.267,1.707,4.267,4.267 C128,229.12,126.293,230.827,123.733,230.827z"
+              ></path>
+            </g>
+          </svg>
+          <span>Susu Penjara</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">Faq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- home -->
+    <!-- <section id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 order-sm-2 order-md-1 order-lg-1">
+            <h1>Tempat Nongkrong Pilihan Terbaik</h1>
+            <p>Menyajikan susu sehat bagi anda. karena kesehatan anda adalah yang utama. Kami melayani sepenuh hati</p>
+            <a href="#product" style="text-decoration: none"><button type="button" style="transition: all 0.5s ease" class="btn btn-dark">Get Started</button></a>
+          </div>
+          <div class="col-md-6 righthome order-sm-1 order-md-2 order-lg-2"></div>
+        </div>
+      </div>
+    </section> -->
+    <section id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="/img/background.jpg" class="background" id="background" alt="" />
+            <img src="/img/foreground.png" class="foreground" id="foreground" alt="" />
+            <div class="title" id="title">
+              <h1>Tempat Nongkrong Pilihan Terbaik</h1>
+              <p>Menyajikan susu sehat bagi anda. karena kesehatan anda adalah yang utama. Kami melayani sepenuh hati</p>
+              <!-- <a href="#product" style="text-decoration: none"><button type="button" style="transition: all 0.5s ease" class="btn btn-outline-light">Get Started</button></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home -->
+
+    <!-- service -->
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <h1>Our Service</h1>
+          <hr style="width: 100px; margin: auto" />
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <svg viewBox="-102.4 -102.4 1228.80 1228.80" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M517.8 811c17.1 0 31 13.9 31 30.9 0 17.1-13.9 30.9-31 30.9s-31-13.9-31-30.9 13.9-30.9 31-30.9m0-20c-28.1 0-51 22.8-51 50.9 0 28.1 22.8 50.9 51 50.9s51-22.8 51-50.9c-0.1-28.1-22.9-50.9-51-50.9zM334.218 304.477l65.69-65.69 14.142 14.143-65.69 65.69zM352.086 387.799L483.253 256.63l14.142 14.142-131.167 131.168z"
+                      fill="#E73B37"
+                    ></path>
+                    <path d="M808 108.4v807.2H216V108.4h592m44-44H172v895.2h680V64.4z" fill="#39393A"></path>
+                    <path d="M747.1 173.4v572.9H279.9V173.4h467.2m22-22H257.9v616.9h511.2V151.4z" fill="#39393A"></path>
+                  </g>
+                </svg>
+                <h1 class="card-text">Fast Respond</h1>
+                <p class="card-text">Kami siap melayani anda</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M639.9 327v16.2c35.5 5.5 68.1 22.1 94 48C766.2 423.5 784 466.4 784 512c0 45.6-17.8 88.5-50.1 120.8-25.9 25.9-58.5 42.4-94 48V697c90.5-13 160-90.9 160-185s-69.5-172-160-185z" fill="#E73B37"></path>
+                    <path
+                      d="M723.8 215.2v16.4c15 3.6 29.7 8.5 44 14.5 34.4 14.5 65.2 35.3 91.7 61.8s47.3 57.3 61.8 91.7C936.4 435.2 944 473 944 512c0 38.9-7.6 76.7-22.7 112.3-14.5 34.4-35.3 65.2-61.8 91.7s-57.3 47.3-91.7 61.8c-14.3 6.1-29 10.9-44 14.5v16.4C859.1 777.7 960 656.6 960 512S859.1 246.2 723.8 215.2zM277.5 386.8h16v250h-16z"
+                      fill="#E73B37"
+                    ></path>
+                    <path d="M277.5 386.8v9.2h16v-9.2h-16z m0 241.2v8.8h16V628h-16z" fill="#39393A"></path>
+                    <path
+                      d="M616.4 458.4c-11-11.1-25.5-18.7-41.5-21.3V112l-297 240H64v320h214l296.9 240V586.9c36.1-5.8 63.8-37.3 63.8-74.9 0-20.9-8.5-39.9-22.3-53.6z m-85.6 361.4L305.6 637.7l-12.1-9.8v8.8h-16V628H108V396h169.5v-9.2h16v9.2l12.1-9.8 225.2-182.1v615.7z m74.3-265.6c-8.4 8.4-18.9 14.1-30.2 16.4V453.3c11.3 2.3 21.8 7.9 30.2 16.4 11.4 11.3 17.6 26.4 17.6 42.3 0 15.9-6.3 30.9-17.6 42.2z"
+                      fill="#39393A"
+                    ></path>
+                  </g>
+                </svg>
+                <h1 class="card-text">Live Music</h1>
+                <p class="card-text">Akan selalu ada musik untuk anda</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M601.5 531.8h278.8v16H601.5zM639.3 657.4h224v16h-224zM686.8 779h160.8v16H686.8z" fill="#F73737"></path>
+                    <path
+                      d="M216.3 927.8H62.2V425.6h155.4l-1.3 502.2z m-110.1-44h66.2l1.1-414.2h-67.3v414.2zM822.1 927.8H268.9l-0.4-502L633.3 96.2l85.2 91.5-66.8 196.7h310L822.1 927.8z m-509.3-44H788l117-455.4H655.8l-65.5-0.1 78.1-229.9-37.8-40.5-318.1 287.4 0.3 438.5z"
+                      fill="#353535"
+                    ></path>
+                  </g>
+                </svg>
+                <h1 class="card-text">Friendly</h1>
+                <p class="card-text">Melayani sepenuh hati</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service -->
+
+    <!-- about -->
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 leftabout">
+            <img src="/img/milk-svgrepo-com (4).png" alt="" />
+          </div>
+          <div class="col-md-6 rightabout">
+            <h1>About Us</h1>
+            <p>
+              Susu Penjara adalah destinasi yang sempurna bagi pecinta susu dan produk susu. Kedai ini menawarkan berbagai jenis susu segar, produk susu olahan, dan minuman lezat yang semuanya disajikan dengan cinta dan kualitas terbaik.
+              Apakah Anda mencari cemilan sehat atau ingin mencoba variasi susu yang unik, Kami adalah tempat yang tepat.
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 3%; margin-bottom: 3%">
+          <div class="col-md-6 order-md-1 order-2 rightabout">
+            <h1>Vision & Mission</h1>
+            <p>
+              Menjadi produsen dan penyedia susu sapi terkemuka yang diakui secara nasional untuk kualitas dan keberlanjutan, serta memberikan manfaat kesehatan yang maksimal bagi konsumen. Menyediakan susu sapi berkualitas tinggi yang
+              dihasilkan dengan standar terbaik dan teknologi terbaru untuk memastikan keamanan dan mutu produk yang konsisten
+            </p>
+          </div>
+          <div class="col-md-6 order-1 leftabout">
+            <img src="/img/milk-svgrepo-com (5).png" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 leftabout">
+            <img src="/img/milk-svgrepo-com (2).png" alt="" />
+          </div>
+          <div class="col-md-6 rightabout">
+            <h1>Why Choose Us?</h1>
+            <p>
+              Kami berkomitmen untuk menghasilkan susu dengan kualitas terbaik. Kami mengawasi seluruh proses produksi, mulai dari perawatan hewan sapi hingga pengolahan susu, untuk memastikan setiap tetes susu yang Anda konsumsi
+              berkualitas tinggi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+
+    <!-- product -->
+    <section id="product">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2>Product</h2>
+            <h1>Best Sale</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no1">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/original.png" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Original</h5>
+                  <p>Rp.6.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal1">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no2">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle2()" id="btnh2" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/banana.png" class="card-img-top" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Banana</h5>
+                  <p>Rp.7.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no3">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle3()" id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/strawberry.png" class="card-img-top" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Strawberry</h5>
+                  <p>Rp.7.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal3">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no4">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle4()" id="btnh4" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/melon.png" class="card-img-top" style="position: relative; right: 1%" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Melon</h5>
+                  <p>Rp.7.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal4">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no5">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle5()" id="btnh5" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/chocolate.png" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Chocolate</h5>
+                  <p>Rp.7.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal5">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no6">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle6()" id="btnh6" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/lychee.png" class="card-img-top" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Lychee</h5>
+                  <p>Rp.7.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal6">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no7">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle7()" id="btnh7" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/milo.png" class="card-img-top" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Milo</h5>
+                  <p>Rp.8.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal7">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card" id="no8">
+              <div class="deskriptionbtn">
+                <button onclick="Toggle8()" id="btnh8" class="btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="inner">
+                <img src="/img/ginger.png" class="card-img-top" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <div class="deskription">
+                  <h5>Ginger</h5>
+                  <p>Rp.7.000,00</p>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal8">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 viewAll">
+            <a href="https://www.instagram.com/susupenjara/" style="text-decoration: none"><button type="button" class="btn btn-dark">View All</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/original.png" alt="" />
+                <h1>Original</h1>
+                <p>Susu Segar dengan rasa Original</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity" name="quantity" min="1" onChange="mySummary();" onChange="mySummary();" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time" name="time" onChange="mySummary();" oninput="remove()" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler" name="size" value="Reguler" onChange="mySummary();" checked />
+                      <label class="form-check-label" for="reguler"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big" name="size" value="Big" onChange="mySummary();" />
+                      <label class="form-check-label" for="big"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp1();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/banana.png" alt="" />
+                <h1>Banana</h1>
+                <p>Susu Segar dengan rasa Pisang</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity2" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity2" name="quantity2" min="1" onChange="mySummary2();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time2" name="time2" onChange="mySummary2();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler2" name="size2" value="Reguler" onChange="mySummary2();" checked />
+                      <label class="form-check-label" for="reguler2"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big2" name="size2" value="Big" onChange="mySummary2();" />
+                      <label class="form-check-label" for="big2"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total2"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp2();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/strawberry.png" alt="" />
+                <h1>Strawberry</h1>
+                <p>Susu Segar dengan rasa stroberi</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity3" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity3" name="quantity3" min="1" onChange="mySummary3();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time3" name="time3" onChange="mySummary3();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler3" name="size3" value="Reguler" onChange="mySummary3();" checked />
+                      <label class="form-check-label" for="reguler3"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big3" name="size3" value="Big" onChange="mySummary3();" />
+                      <label class="form-check-label" for="big3"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total3"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp2();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/melon.png" alt="" />
+                <h1>Melon</h1>
+                <p>Susu Segar dengan rasa melon</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity4" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity4" name="quantity4" min="1" onChange="mySummary4();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time4" name="time4" onChange="mySummary4();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler4" name="size4" value="Reguler" onChange="mySummary4();" checked />
+                      <label class="form-check-label" for="reguler4"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big3" name="size4" value="Big" onChange="mySummary4();" />
+                      <label class="form-check-label" for="big3"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total4"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp4();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/chocolate.png" alt="" />
+                <h1>Chocolate</h1>
+                <p>Susu Segar dengan rasa coklat</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity5" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity5" name="quantity5" min="1" onChange="mySummary5();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time5" name="time5" onChange="mySummary5();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler5" name="size5" value="Reguler" onChange="mySummary5();" checked />
+                      <label class="form-check-label" for="reguler5"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big5" name="size5" value="Big" onChange="mySummary5();" />
+                      <label class="form-check-label" for="big5"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total5"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp5();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/lychee.png" alt="" />
+                <h1>Lychee</h1>
+                <p>Susu Segar dengan rasa leci</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity6" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity6" name="quantity6" min="1" onChange="mySummary6();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time6" name="time6" onChange="mySummary6();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler6" name="size6" value="Reguler" onChange="mySummary6();" checked />
+                      <label class="form-check-label" for="reguler6"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big5" name="size6" value="Big" onChange="mySummary6();" />
+                      <label class="form-check-label" for="big5"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total6"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp6();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/lychee.png" alt="" />
+                <h1>Lychee</h1>
+                <p>Susu Segar dengan rasa leci</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity6" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity6" name="quantity6" min="1" onChange="mySummary6();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time6" name="time6" onChange="mySummary6();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler6" name="size6" value="Reguler" onChange="mySummary6();" checked />
+                      <label class="form-check-label" for="reguler6"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big6" name="size6" value="Big" onChange="mySummary6();" />
+                      <label class="form-check-label" for="big6"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total6"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp6();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/milo.png" alt="" />
+                <h1>Milo</h1>
+                <p>Susu Segar dengan rasa Milo</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity7" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity7" name="quantity7" min="1" onChange="mySummary7();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time7" name="time7" onChange="mySummary7();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler7" name="size7" value="Reguler" onChange="mySummary7();" checked />
+                      <label class="form-check-label" for="reguler7"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big7" name="size7" value="Big" onChange="mySummary7();" />
+                      <label class="form-check-label" for="big7"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total7"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp7();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/img/milo.png" alt="" />
+                <h1>Ginger</h1>
+                <p>Susu Segar dengan rasa jahe</p>
+              </div>
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="quantity8" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity8" name="quantity8" min="1" onChange="mySummary8();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time8" name="time8" onChange="mySummary8();" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="reguler8" name="size8" value="Reguler" onChange="mySummary8();" checked />
+                      <label class="form-check-label" for="reguler8"> Reguler </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="big8" name="size8" value="Big" onChange="mySummary8();" />
+                      <label class="form-check-label" for="big8"> Jumbo </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="total8"></p>
+            <button type="button" class="btn btn-success" onclick="sendwhatsapp8();">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="swiper mySwiper">
+            <div class="col-md-12">
+              <h1>What's Our Customer Say</h1>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <small class="card-meta"><i class="fa-solid fa-quote-right"></i></small>
+                    <p class="card-text">Susunya enak, konsisten rasanya. Pelayanannya oke banget. Taste music nya juga bagus. Top lah ini. Langganan saya kalau ke Salatiga.</p>
+                    <small class="card-meta" id="smallquote"><i class="fa-solid fa-quote-left"></i></small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="footer">
+                      <img src="/img/customer1.png" alt="" />
+                    </div>
+                    <div class="footer">
+                      <p>Kristina Putri</p>
+                      <small style="color: orange"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <small class="card-meta"><i class="fa-solid fa-quote-right"></i></small>
+                    <p class="card-text">Susu segarnya enak gitu ya susunya. Grade 1 kayaknya hahaha.</p>
+                    <small class="card-meta" id="smallquote"><i class="fa-solid fa-quote-left"></i></small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="footer">
+                      <img src="/img/customer2.png" alt="" />
+                    </div>
+                    <div class="footer">
+                      <p>Fransisca Gracelly Anggun Puspita</p>
+                      <small style="color: orange"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <small class="card-meta"><i class="fa-solid fa-quote-right"></i></small>
+                    <p class="card-text">Pertama nggak sengaja ktmu tempat ini. Suasanya nyaman buat segala acara. Menu sesuai harga. Pelayanan baik. Parkir luas.</p>
+                    <small class="card-meta" id="smallquote"><i class="fa-solid fa-quote-left"></i></small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="footer">
+                      <img src="/img/customer3.png" alt="" />
+                    </div>
+                    <div class="footer">
+                      <p>Candra Chris</p>
+                      <small style="color: orange"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <small class="card-meta"><i class="fa-solid fa-quote-right"></i></small>
+                    <p class="card-text">Tempat yg unik dan nyaman banget buat nongkrong, apalagi bikin Acara disini 😍 cocok banget 🥰🥰 Thankyou Susu Penjara.</p>
+                    <small class="card-meta" id="smallquote"><i class="fa-solid fa-quote-left"></i></small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="footer">
+                      <img src="/img/customer4.png" alt="" />
+                    </div>
+                    <div class="footer">
+                      <p>Vitus Bodhi Virya</p>
+                      <small style="color: orange"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nextprev">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial -->
+
+    <!-- faq -->
+    <section id="faq">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 rightfaq">
+            <div class="faqtitle">
+              <h1>Frequently asked questions</h1>
+              <p>Everything you know about Susu Penjara</p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Apa itu Susu Penjara?</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Susu Penjara adalah UKM yang berada di Salatiga menjual berbagai macam aneka susu.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bagaimana pemesanannya?</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Pemesanannya anda dapat langsung datang ke kedai kami. Anda juga dapat melakukan pemesanan melalui website ini atau hubungi kontak kami.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Apa saja untuk menunya?</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Menunya tentu adalah aneka rasa susu. Tentu saja ada untuk pelengkapnya yaitu berupa makanan berat dan cemilan.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Dimana Lokasinya?</button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Lokasinya berada di Jl. Yos Sudarso No.8, Salatiga, Kec. Sidorejo, Kota Salatiga, Jawa Tengah 50711 (Depan SD Kristen Satya Wacana Salatiga).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Come Discuss With Us</h1>
+            <p>See what we can offer you. Contact us now, and start making something extraordinary with Susu Penjara</p>
+          </div>
+          <div class="col-md-4">
+            <a href="https:/wa.me/6289647430050" style="text-decoration: none"><button type="button" style="transition: all 0.5s ease" class="btn btn-outline-light">Contact Now</button></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Our Location</h1>
+            <br />
+            <h5>Salatiga, Jawa Tengah</h5>
+            <p class="text-50">Salatiga, Kec. Sidorejo, Kota Salatiga, Jawa Tengah 50711</p>
+            <br />
+            <h5>Jam Operasional :</h5>
+            <p>Senin - Jum'at (18:00 -00:00) <br />Sabtu - Minggu (17:00 -00:00)</p>
+            <p></p>
+          </div>
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d401.21038296823275!2d110.50024516316036!3d-7.32087290885765!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1697772937217!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer class="text-white">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Susu Penjara</h3>
+            <p>Susu Penjara siap menyiapkan refrensi kuliner susu anda. dengan tambahan cemilan. dan tentunya meyediakan hiburan untuk anda.</p>
+          </div>
+          <div class="col-md-4 quickLinks">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#home" style="text-decoration: none"><i class="fa-solid fa-house"></i> Home</a>
+              </li>
+              <li>
+                <a href="#about" style="text-decoration: none"><i class="fa-solid fa-circle-info"></i> About</a>
+              </li>
+              <li>
+                <a href="#product" style="text-decoration: none"><i class="fa-solid fa-tags"></i> Product</a>
+              </li>
+              <li>
+                <a href="#testimonial" style="text-decoration: none"><i class="fa-solid fa-message"></i> Testimonial</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mediaSocial">
+            <h3>Contact</h3>
+            <a href="https://www.instagram.com/susupenjara/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/chandra.b.dw"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https:/wa.me/6289647430050"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://maps.app.goo.gl/L8PpsEd5Z5XW4CJh9"><i class="bi bi-map-fill"></i></a>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-md-12">
+            <hr />
+            <small class="text-white-50" style="display: flex; justify-content: center">&copy; Copyright by<a href="https://www.gamelab.id/" style="margin-left: 3px">Gamelab</a>. All Right Reserved.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5cde4e598e.js" crossorigin="anonymous"></script>
+  </body>
+</html>
